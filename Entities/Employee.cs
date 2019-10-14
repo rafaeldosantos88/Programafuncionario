@@ -21,7 +21,7 @@ namespace Course.Entities
             Hours = hours;
             ValuePerHour = valuePerHour;
         }
-        public double  Payment()               //Operação pagamento
+        public virtual double  Payment()               //Operação pagamento.O pagamento funcionario é diferente do pagamento funcionariotercerizado,foi colocado virtual
         {
             return Hours * ValuePerHour;      // A operação pagamento  vai ser "Horas" * vezes "valor por hora"
 
